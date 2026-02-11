@@ -1,0 +1,6 @@
+*cache*
+all_files.txt
+output.txt
+*.env
+*.patch*
+temp_log.txt

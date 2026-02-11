@@ -1,0 +1,37 @@
+{
+"editor.hover.sticky": false,
+  "python.analysis.extraPaths": [
+    "./backend",
+    "./frontend"
+  ],
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "claudeCode.initialPermissionMode": "plan",
+  "python.defaultInterpreterPath": "/home/cedar/miniconda3/envs/voice-agent/bin/python",
+
+  "pylint.interpreter": [
+    "/home/cedar/miniconda3/envs/voice-agent/bin/python"
+  ],
+
+
+  "editor.insertSpaces": true,
+
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false
+  }
+}
+

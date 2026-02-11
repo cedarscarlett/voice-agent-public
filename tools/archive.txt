@@ -1,0 +1,27 @@
+def _freeze_tts_chunks(text: str) -> tuple[str, ...]:
+    """
+    Deterministically derive a full TTS chunk plan from final LLM output.
+
+    Uses evaluate_chunk with a forced elapsed_ms to ensure progress.
+    """
+    chunks: list[str] = []
+    buffer = text
+
+    force_elapsed_ms  = 10**9  # forces B/C triggers deterministically
+
+    while buffer:
+        decision = evaluate_chunk(
+            buffer=buffer,
+            elapsed_ms=force_elapsed_ms ,
+        )
+
+        if not decision.send:
+            # Defensive fallback
+            chunks.append(buffer)
+            break
+
+        assert decision.send_text is not None
+        chunks.append(decision.send_text)
+        buffer = decision.remainder or ""
+
+    return tuple(chunks)

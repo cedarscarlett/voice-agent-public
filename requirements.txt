@@ -1,0 +1,55 @@
+# -----------------------------
+# Core runtime
+# -----------------------------
+python-dotenv
+pydantic
+
+# -----------------------------
+# Async + WebSocket server
+# -----------------------------
+fastapi
+uvicorn
+websockets
+
+# -----------------------------
+# Concurrency & async utilities
+# -----------------------------
+anyio
+
+# -----------------------------
+# Audio processing
+# -----------------------------
+numpy
+soundfile
+resampy
+scipi
+
+# -----------------------------
+# Observability & logging
+# -----------------------------
+orjson
+structlog
+
+# -----------------------------
+# Testing
+# -----------------------------
+pytest
+pytest-asyncio
+freezegun
+
+# -----------------------------
+# Optional: ASR / LLM / TTS adapters
+# (Install only what you actually use)
+# -----------------------------
+
+#ASR
+openai-whisper
+faster_whisper
+deepgram
+
+# LLM
+openai
+
+# TTS
+speechmatics-tts
+elevenlabs
