@@ -224,7 +224,6 @@ export class Playback {
       return;
     }
 
-    // TODO(Phase 6): Add queue depth cap when real TTS is integrated.
     // For Phase 5 echo path, queue remains shallow.
     this._queue.push({
       seqNum,

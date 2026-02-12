@@ -1,3 +1,5 @@
+SYSTEM_PROMPT_VERSION: str = "v1"
+
 SYSTEM_PROMPT_V1: str = """
 You are a voice scheduling assistant that helps users check availability and book appointments. The appointments are 30 minute consultation calls.
 

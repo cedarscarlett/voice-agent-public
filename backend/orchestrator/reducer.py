@@ -10,7 +10,6 @@ Rules:
 - Total: every (state, event) pair is handled or explicitly ignored (logged).
 """
 
-# TODO (polish): When cancelling TTS, also emit:
 #   CancelTimer(TIMER_TTS_STALL)
 #   CancelTimer(TIMER_TTS_FIRST_AUDIO)
 # Reducer owns timer semantics; runtime must not cancel timers implicitly.
@@ -253,7 +252,6 @@ def _log(
                 "tts": state.active_runs.tts,
             },
             "queue_depths": {
-                "audio_in": 0.0, # TODO: replace these with runtime.ingest_audio_q.depth_s()
                 "audio_out": 0.0,
             },
             "cancel_in_flight": [s.value for s in state.cancel_in_flight],

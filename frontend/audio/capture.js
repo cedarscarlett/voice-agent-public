@@ -122,7 +122,6 @@ export class MicCapture {
     // - ScriptProcessor timing is predictable and debuggable
     // - Chrome support extends well past 2025
     //
-    // TODO(Phase 6+): Migrate to AudioWorklet for production.
     this.audioContext = new AudioContext({
       sampleRate: BROWSER_CAPTURE_SAMPLE_RATE_HZ_DEFAULT,
     });

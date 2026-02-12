@@ -59,7 +59,6 @@ class ChunkTimerState:
 class OrchestratorState:
     """Immutable snapshot of all orchestrator-owned state."""
 
-    # TODO: Make sure the default is safe regardless of provider
     # or remove the default and make gateway construct this with a
     # voice received from config
 
@@ -149,7 +148,6 @@ class OrchestratorState:
     # ------------------------------------------------------------------
     # Backpressure / DEGRADED mode (future)
     # ------------------------------------------------------------------
-    # TODO:
     # queue_depths_s: QueueDepths | None = None
 
     # ------------------------------------------------------------------

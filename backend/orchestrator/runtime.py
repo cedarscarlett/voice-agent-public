@@ -159,7 +159,6 @@ class Runtime:
         This is a last-resort safety mechanism. No orchestration decisions
         are made here.
 
-        TODO: Implement LLM using the same pattern.
         """
         if service is Service.ASR:
             if self._ctx.asr_adapter is not None:

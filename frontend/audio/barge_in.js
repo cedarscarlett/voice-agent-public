@@ -137,7 +137,6 @@ export class BargeInDetector {
 
     this.audioContext = audioContext;
 
-    // TODO(Phase 6): Share mic stream with capture.js to avoid duplicate
     // getUserMedia calls. Some browsers / OSes struggle with concurrent
     // microphone access or show multiple permission prompts.
     try {

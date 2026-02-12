@@ -108,7 +108,6 @@ startBtn.onclick = async () => {
     // This creates a SECOND getUserMedia call (separate from MicCapture).
     // This is an intentional Phase-5 compromise.
     //
-    // Phase 6 TODO:
     // - Share mic MediaStream between capture + barge-in
     // - Avoid duplicate device access / permission prompts
     // -------------------------------------------------------------------------
